@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+}
+
+.bfl {
+    display: block;
+    float: left;
+}
+
+.fw{
+    width: 100%;
+}
+
+form{
+    margin: 10px;
+}
+
+#upload-button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    color: #e0e0e0;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Patua One', cursive;
+}
+
+#file-to-upload{
+    font-weight: bold;
+}
+
+#visualization-section{
+    margin: 100px 0;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Patua One', cursive;
+}
+
+#file-name{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Patua One', cursive;
+}
+
+#visualization-title{
+    display: block;
+    float: left;
+    font-size: 27px;
+    font-weight: bold;
+    width: 90%;
+    color: #e0e0e0;
+    text-align: center;
+    font-family: 'Rammetto One', cursive;
+}
+
+#top-bar{
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.color-icon{
+    display: block;
+    float: left;
+    margin: 7px 10px 0;
+    fill: #e0e0e0;
+    cursor: pointer;
+}
+
+#menu-options{
+    display: none;
+    width: 193px;
+    padding-bottom: 5px;
+    position: fixed;
+    left: 10px;
+    top: 58px
+}
+
+.color-box{
+    width: 40px;
+    height: 40px;
+    background: white;
+    margin: 5px 0 0 5px;
+    float: left;
+    border: solid 1px #a0a0a0;
+    cursor: pointer;
+}
+
+.color-box:active, #color-icon:active{
+    opacity: 0.5;
+}
+
+#hide-colors-btn{
+    display: none;
+}
+
+#hide-instructions-btn{
+    float: right;
+    margin: 20px 40px 0 0;
+}
+
+#file-upload-section{
+    margin-top: 70px;
+}
+
+#instructions-overlay{
+    display: none;
+    float: left;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 820px;
+    overflow: scroll;
+}
+
+#instructions {
+    display: block;
+    float: left;
+    width: 50%;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li>img {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#instructions>ol {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    counter-reset: item;
+    list-style: none none;
+}
+
+
+#instructions>ol>li{
+    width: 650px;
+    font-size: 18px;
+    padding: 5px;
+    line-height: 200%;
+    counter-increment: item;
+}
+
+#instructions>ol>li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: #444;
+    border-radius: 100%;
+    color: #e0e0e0;
+    width: 35px;
+    text-align: center;
+    display: inline-block;
+}
+
+#instructions-title{
+    margin-top: 30px;
+    display: block;
+    float: left;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #444;
+    font-family: 'Rammetto One', cursive;
+    text-decoration: underline;
+}
+
+#back-to-vis-link{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+    color: #444;
+    font-weight: bold;
+}
+
+#back-to-vis-link:active{
+    color: #000;
+}
